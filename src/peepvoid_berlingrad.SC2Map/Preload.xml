@@ -148,6 +148,7 @@
 <Race id="Prot"/>
 <Race id="Gen"/>
 <Race id="Xayi"/>
+<Race id="Keir"/>
 <Sound id="CommandCenter_Movement2"/>
 <Sound id="UI_BnetCountdown"/>
 <Sound id="UI_MiniMapPing"/>
@@ -185,6 +186,7 @@
 <Unit id="UnbuildablePlatesDestructible" Variations="0"/>
 <Unit id="LabMineralField" Variations="0,1,2,3,4,6,8,9"/>
 <Unit id="LabMineralField750" Variations="0,1,2,4,5,6,7,8,9"/>
+<Unit id="CitadelCharged"/>
 <Unit id="ApplyVision"/>
 <Unit id="CustomDecalCow"/>
 <Unit id="CustomDecalMuta"/>

@@ -6459,20 +6459,25 @@ void gf_InitializeGenetronResearch () {
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/9A0652C6");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/7B5BCBCB");
     lv_intCol += 1;
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "ReinforcedPlating";
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-genetron-reinforcedplating.dds";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "SpitfireMadcapRounds";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-tips-terran-penetrator.dds";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/BE529B90");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/BC8C8888");
     lv_intCol += 1;
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "FirewallShield";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "BlitzerBoreanReactor";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-genetron-firewallshield.dds";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/8C62DAF1");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/987A232E");
     lv_intCol += 1;
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "RefittedNozzles";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "FixerFusionWelders";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-genetron-refittednozzles.dds";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/1FC867C1");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/2BA53431");
+    lv_intCol += 1;
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "FixerReactiveArmor";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-genetron-firewallshield.dds";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/2F52D49E");
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/B83B53E4");
     lv_intCol += 1;
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "PhalanxReactor";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-genetron-phalanxreactor.dds";
@@ -6632,8 +6637,8 @@ void gf_InitializeXayidResearch () {
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/BC2C9D3A");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/61FA7DC1");
     lv_intCol += 1;
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "PiercingThrust";
-    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-ability-zerg-dehaka-tyrannozor-barrageofspikes.dds";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_upUpgrade = "DexterousJoints";
+    gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_imgIcon = "Assets\\Textures\\btn-upgrade-xayid-dexterousjoints.dds";
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtName = StringExternal("Param/Value/DF5DF9BC");
     gv_recResearch[lv_intRace][lv_intRow][lv_intCol][lv_intLevel].lv_txtDescription = StringExternal("Param/Value/51ECE717");
     lv_intCol += 1;
@@ -13711,6 +13716,18 @@ text gf_convertGameLinkToIconText (string lp_glUnitType, string lp_glUpgrade) {
         else if ((lp_glUpgrade == "FirewallShield")) {
             lv_txtIcon = StringExternal("Param/Value/D02E936E");
         }
+        else if ((lp_glUpgrade == "SpitfireMadcapRounds")) {
+            lv_txtIcon = StringExternal("Param/Value/E8164079");
+        }
+        else if ((lp_glUpgrade == "BlitzerBoreanReactor")) {
+            lv_txtIcon = StringExternal("Param/Value/0CB9E7C8");
+        }
+        else if ((lp_glUpgrade == "FixerReactiveArmor")) {
+            lv_txtIcon = StringExternal("Param/Value/5D8C3018");
+        }
+        else if ((lp_glUpgrade == "FixerFusionWelders")) {
+            lv_txtIcon = StringExternal("Param/Value/4B10493B");
+        }
         else if ((lp_glUpgrade == "RefittedNozzles")) {
             lv_txtIcon = StringExternal("Param/Value/EFA37DDC");
         }
@@ -13777,7 +13794,7 @@ text gf_convertGameLinkToIconText (string lp_glUnitType, string lp_glUpgrade) {
         else if ((lp_glUpgrade == "OcularAcuity")) {
             lv_txtIcon = StringExternal("Param/Value/75B6C2F1");
         }
-        else if ((lp_glUpgrade == "PiercingThrust")) {
+        else if ((lp_glUpgrade == "DexterousJoints")) {
             lv_txtIcon = StringExternal("Param/Value/BEE62FE9");
         }
         else if ((lp_glUpgrade == "ScorpaliskMetabolics")) {
@@ -24113,8 +24130,10 @@ void gf_InitializeMatch () {
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "GenetronLightWeaponsLevel3", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "CalibratedEngines", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "ReinforcedPlating", 0);
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "FirewallShield", 0);
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "RefittedNozzles", 0);
+        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "SpitfireMadcapRounds", 0);
+        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "BlitzerBoreanReactor", 0);
+        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "FixerFusionWelders", 0);
+        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "FixerReactiveArmor", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "PhalanxReactor", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "TrackingMunitions", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "EnhancedTargeting", 0);
@@ -24139,7 +24158,7 @@ void gf_InitializeMatch () {
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "XayidGroundAttacksLevel2", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "XayidGroundAttacksLevel3", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "OcularAcuity", 0);
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "PiercingThrust", 0);
+        libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "DexterousJoints", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "ScorpaliskMetabolics", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "PersistentSpores", 0);
         libNtve_gf_SetUpgradeLevelForPlayer(lv_intPlayer, "CalcifiedHusk", 0);
@@ -24259,6 +24278,9 @@ void gf_ClearAllUnitsExploration () {
     unitgroup auto851ADD92_g;
     int auto851ADD92_u;
     unit auto851ADD92_var;
+    unitgroup auto31304DDE_g;
+    int auto31304DDE_u;
+    unit auto31304DDE_var;
     int autoD281E024_ae;
     const int autoD281E024_ai = 1;
     int auto23EBD229_ae;
@@ -24287,6 +24309,16 @@ void gf_ClearAllUnitsExploration () {
                 }
 
             }
+        }
+        auto31304DDE_g = UnitGroup(null, lv_intPlayer, RegionEntireMap(), UnitFilter(0, 0, 0, 0), 0);
+        auto31304DDE_u = UnitGroupCount(auto31304DDE_g, c_unitCountAll);
+        for (;; auto31304DDE_u -= 1) {
+            auto31304DDE_var = UnitGroupUnitFromEnd(auto31304DDE_g, auto31304DDE_u);
+            if (auto31304DDE_var == null) { break; }
+            if (((UnitGetType(auto31304DDE_var) != "XelNagaTower") && (UnitGetType(auto31304DDE_var) != "MineralField450") && (UnitGetType(auto31304DDE_var) != "InhibitorZoneLarge") && (UnitGetType(auto31304DDE_var) != "InhibitorZoneMedium") && (UnitGetType(auto31304DDE_var) != "InhibitorZoneSmall"))) {
+                UnitRemove(auto31304DDE_var);
+            }
+
         }
     }
     Wait(0.1, c_timeGame);
